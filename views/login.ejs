@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title> LOGIN</title>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+       
+       <style>
+       
+      
+      .login{  width: 320px;
+          height: 450px;
+          background: #000;
+          color: #fff;
+          top:20%;
+          left:36%;
+          position:absolute;
+         
+          
+          
+        }
+
+      h1{    margin:0;
+          padding: 0 0 20px;
+          text-align: center;
+          font-size: 30px;
+          font-weight: lighter;
+          font-family:papyrus;
+          color:red;
+        }    
+      .login p{  margin:0;
+          padding: 0;
+          font-weight:bold;
+          font-family:papyrus;
+                 }
+     
+      .login a{   
+          text-decoration:none;
+          font-size:15px;
+          padding-left:20px;
+          line-height:20px;
+          color: red;
+          font-family:papyrus;
+      }
+      .login a:hover
+      {  
+        color:white;
+      }
+      .login input{width: 100%;
+          margin-bottom:20px;
+          font-family:papyrus;
+                     }
+      .login input[type="text"], input[type="password"]{
+          border: none;
+          border-bottom: 1px solid #fff;
+          background: transparent;
+          outline:none;
+          height:40px;
+          color:#fff;
+          font-size:16px;
+          font-family:papyrus;
+              }
+      .login input[type="submit"]{
+          border: none;
+          outline:none;
+          height:40px;
+          background:#fb2525;
+          font-family:papyrus;
+          font-size:18px;
+          border-radius:20px;
+            }
+      .login input[type="submit"]:hover
+      {    cursor:pointer;
+          background:#ffffff;
+          color:red;
+          font-family:papyrus;
+      }
+
+      
+       </style>
+  </head>
+  <body style="background-image: url(https://cdn.glitch.global/fc4f838c-1c31-403b-a5a0-0f5f0bf684e5/1669542333394.jpg?v=1669570985892);background-size: cover;">
+   
+    <div class="login">
+    
+    <h1><b>LOGIN<b></h1>
+    
+      <form method="GET" action="/loginSubmit">
+    <p> Username</p>
+    <input type="text" name="name" placeholder="Enter Username">
+    <p> Password</p>
+    <input type="password" name="pass" placeholder="Enter Password"><br>
+    <input type="submit" name="" value="Login">
+    <p style="padding-left:20px"><a href="http://localhost:3000/register">Do not have an account?   Create an one!!</a></p>
+  
+    
+    </form>
+    </div>
+    
+  </body>
+</html>
