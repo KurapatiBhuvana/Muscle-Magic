@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Register</title>
+   </head>
+   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: papyrus;
+  background: url("new.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+  
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #f10909, #070707);
+  color: white;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  color: white;
+}
+
+
+form .i span.val{
+  
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+}
+.element .i input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  
+  transition: all 0.3s ease;
+  color: white;
+}
+.element .i input:focus,
+.element .i input:valid{
+  border-color: #ff0b0b;
+  color: white;
+}
+form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #f10909, #070707);
+ }
+ form .button input:hover{
+ 
+    background: linear-gradient(135deg, #f10909, #070707);
+  }
+
+form .element .i{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+ form .gender .title{
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   color: white;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   color: white;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+ #male:checked ~ .category label .one,
+ #female:checked ~ .category label .two,
+ #not:checked ~ .category label .three{
+   background: #ff0000;
+   border-color: #090909;
+ }
+a{   
+          text-decoration:none;
+          font-size:20px;
+          
+          line-height:20px;
+          color: white;
+          font-family:papyrus;
+      }
+ a:hover
+      {  
+        color:black;
+      }
+
+</style>
+
+ 
+<body style = "background-image: url(https://www.shutterstock.com/image-vector/red-abstract-background-vector-illustration-260nw-326693105.jpg);background-size: cover;" >
+  <div class="container">
+    
+    <div>
+      <form method="GET" action="/signupSubmit">
+        <div class="element">
+          
+          <div class="i">
+            <span class="val">Username</span>
+            <input type="text" name = "name" placeholder="Enter your username" required>
+          </div>
+          <div class="i">
+            <span class="val">Email</span>
+            <input type="email" name = "email" placeholder="Enter your email" required>
+          </div>
+         
+          
+          <div class="i">
+            <span class="val">Password</span>
+            <input type="password"  name = "pass" placeholder="Enter your password" required>
+          </div>
+          <div class="i">
+            <span class="val">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender" id="male">
+          <input type="radio" name="gender" id="female">
+          <input type="radio" name="gender" id="not">
+          <span class="title">Gender</span>
+          <div class="category">
+            <label for="male">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="female">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="not">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+
+        <p style="padding-left:230px">Aldready have an account?<br></b><button style="background:red;padding-left: 50px;padding-right: 50px;"><a href="http://localhost:3000/login">Login</a></button></p>
+      </form>
+     
+    </div>
+  </div>
+
+
+</body>
+</html>
