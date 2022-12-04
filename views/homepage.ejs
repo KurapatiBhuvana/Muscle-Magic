@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title> Main </title>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+       <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+       <style>
+       body{
+      
+
+       
+  
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+     
+         }
+         i{
+            color: whitesmoke;
+            font-family: papyrus;
+            padding-left: 100px;
+            font-size: 100px;
+            
+         }
+         p{
+            color: whitesmoke;
+            font-size: xx-large;
+            padding-left: 200px;
+            font-family: papyrus;
+         }
+         label{
+            color: whitesmoke;
+            font-size: large;
+           font-weight: bold;
+            font-family: papyrus;
+
+         }
+         select{
+            height: 30px;
+            font-family: papyrus;
+            
+         }
+         button:hover{
+          background-color: brown;
+         }
+         button{
+            height: 40px;
+            width: 100px;
+            font-size: large;
+            font-family: papyrus;
+
+            
+         }
+         .b{
+            padding-left: 200px;
+         }
+         form{
+            color: whitesmoke;
+            font-size: xx-large;
+            padding-left: 200px;
+            font-family: papyrus;
+         }
+         .id:hover{
+          background-color: linear-gradient(135deg, #f10909, #070707);
+         }
+         a{   
+          text-decoration:none;
+          font-size:15px;
+         
+          line-height:20px;
+          color: red;
+          font-family:papyrus;
+      }
+      a:hover
+      {  
+        color:white;
+      }
+
+           
+       </style>
+  </head>
+ 
+    
+<body style="background-image: url(https://cdn.glitch.global/fc4f838c-1c31-403b-a5a0-0f5f0bf684e5/bg.jpg?v=1669530226258);background-size: cover;">
+  <a href="http://localhost:3000/"><img style = "height: 40px;" src="https://thumbs.dreamstime.com/b/red-neon-house-door-roof-chimney-black-background-red-neon-house-icon-door-roof-chimney-black-222507077.jpg"></a>
+  <br><br>
+<i>Muscle Magic</i>
+<br><br><br><br>
+<p>“I don’t stop when I’m tired, I stop when I’m done.”
+                – David Goggins
+
+<form method="GET" action="/exercise">
+<label for="muscle selection">MUSCLE:  </label>
+
+<select name = "musc">
+  <option value="select the part" ></option>
+  <option class = "id">CHEST</option>
+  
+  <option>BICEP</option>
+  <option>TRICEPS</option>
+    
+    <option>SHOULDER</option>
+    <option>LEGS</option>
+    <option>ABDOMINALS</option>
+    <option>ABDUCTORS</option>
+    <option>CALVES</option>
+    <option>FOREARMS</option>
+    <option>GLUTES</option>
+    <option>HAMSTRINGS</option>
+    <option>LATS</option>
+    <option>NECK</option>
+    <option>TRAPS</option>
+
+</select>
+<br>
+<label for="levels">DIFFICULTY: </label>
+
+<select name = "diff">
+  <option value=" " select the level ></option>
+  <option>BEGINNER</option>
+  <option>INTERMEDIATE</option>
+  
+  
+</select>
+<br>
+<p class = "b">
+  <button type="submit">Submit</button>
+
+  </p>
+  </p>  
+</form>
+
+  </body>
+</html>
